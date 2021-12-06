@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "stylesheet" href= "style.css">
+</head>
+<title> Sign Up Page</title>
+
+<body>
+    <!--for the Nav bar -->
+    <div id="menu-outer">
+        <div class ="table">
+            <img src= "home1.png">
+        <ul id="horizontal-list">
+            <!--list of links-->
+            <li><a class="active" href="login.html">Home</a></li>
+            <li><a href="listings.html">Buy Something </a></li>
+            <li><a href="posting.html">Sell Something</a></li>
+            <li><a href="profilePage.html">Profile and orders</a></li>
+            <li><a href="purchaseForm.html">Purchasing Form</a></li>
+            <li><a href="signUp.html">Sign Up Form</a></li>
+            <li><a href="admin.html">Admin Page</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+
+
+    
+
+        <form action="">
+            <h1> <strong> Sign up </strong> </h1>
+            <label>Now that you have been verified, fill out this information </label>
+            <br></br>
+            <label>and click on the create account button to create your own account.</label>
+           
+            <br></br>
+            <br></br>
+            <label for="itemName"> <b> Enter your Ole Miss email:</b> <br></br></label>
+            <input type="text" placeholder="janedoe@go.olemiss.edu" name=email id=email size="30"
+                required>
+            <br></br>
+            <label for="firstName"> <b> Enter your first name: </b><br></br></label>
+            <input type="text" placeholder="Jane" id="firstname" name="firstName">
+           <br></br>
+            <label for="lastName"><b> Enter your last name: </b><br></br></label>
+            <input type="text" placeholder="Doe" id="lastName" name="lastName" size="30">
+            <br></br>
+            <label for="phoneNumber"><b>Enter your phone number: </b></label>
+            <br></br>
+            <input type="int" placeholder="6221234567" id="phoneNumber" name="phoneNumber">
+           <br></br>
+            <button onclick="ScheduleFunction()">Create Account</button>
+
+        </form>
+        <script>
+            function ScheduleFunction() {
+                location.replace("RiderSchedule.html")
+            }
+
+        </script>
+<footer>
+    <p> Rebel Marketplace &#169; 2021</p>
+  </footer>
+
+
+    </body>
+
+</html>
+

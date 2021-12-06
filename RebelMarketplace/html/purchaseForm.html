@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel= "stylesheet" href= "style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<title> Rebel Marketplace</title>
+
+<body>
+    <!--for the Nav bar -->
+    <div id="menu-outer">
+        <div class ="table">
+            <img src= "home1.png">
+        <ul id="horizontal-list">
+            <!--list of links-->
+            <li><a class="active" href="login.html">Home</a></li>
+            <li><a href="listings.html">Buy Something </a></li>
+            <li><a href="posting.html">Sell Something</a></li>
+            <li><a href="profilePage.html">Profile and orders</a></li>
+            <li><a href="purchaseForm.html">Purchasing Form</a></li>
+            <li><a href="signUp.html">Sign Up Form</a></li>
+            <li><a href="admin.html">Admin Page</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+
+
+    
+
+        <form action="">
+            <h1> <strong> Congratulations! You made a purchase! </strong> </h1>
+            <label>Fill out this information and your seller will be in contact soon!</label>
+            <br></br>
+            <br></br>
+            <label for="pickup-location"> <b> What address would you like to purchase your item at?</b> <br></br></label>
+            <input type="text" placeholder="enter your current Location" name=pickup-loc id=pickup-loc size="50"
+                required>
+            <br></br>
+            <label for="Date&Time"> <b> Date and Time </b><br></br></label>
+            <input type="datetime-local" id="mm/dd/yyyy" name="mm/dd/yyyy">
+           <br></br>
+            <label for="payment"><b>How would you like to pay? Please enter either Venmo or Cash:</b><br></br></label>
+            <input type="payment" placeholder="venmo or cash" id="payment" name="payment">
+            <br></br>
+            <button onclick="ScheduleFunction()">Submit</button>
+
+        </form>
+        <script>
+            function ScheduleFunction() {
+                location.replace("RiderSchedule.html")
+            }
+
+        </script>
+<footer>
+    <p> Rebel Marketplace &#169; 2021</p>
+  </footer>
+
+
+    </body>
+
+</html>
+

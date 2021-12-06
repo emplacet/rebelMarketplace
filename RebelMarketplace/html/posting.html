@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "stylesheet" href= "style.css">
+</head>
+<title> Rebel Marketplace</title>
+
+<body>
+    <!--for the Nav bar -->
+    <div id="menu-outer">
+        <div class ="table">
+            <img src= "home1.png">
+        <ul id="horizontal-list">
+            <!--list of links-->
+            <li><a class="active" href="login.html">Home</a></li>
+           <li><a href="listings.html">Buy Something </a></li>
+            <li><a href="posting.html">Sell Something</a></li>
+            <li><a href="profilePage.html">Profile and orders</a></li>
+            <li><a href="purchaseForm.html">Purchasing Form</a></li>
+            <li><a href="signUp.html">Sign Up Form</a></li>
+            <li><a href="admin.html">Admin Page</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+
+        <form action="">
+            <h1> <strong> Ready to sell something? </strong> </h1>
+            <label>Fill out this information and click on the submit button. Your listing will then be approved by our staff as long as it meets requirements.</label>
+            <br><br>
+            <br><br>
+            <label for="itemName"> <b> What item are you wanting to sell?</b> <br></br></label>
+            <input type="text" placeholder="enter your item name" name=itemName id=itemName size="30"
+                required>
+            <br><br>
+            <label for="cost"> <b> Enter the price you want to sell it at </b><br></br></label>
+            <label>$</label>
+            <input type="integer" placeholder="enter the price" id="cost" name="cost">
+           <br><br>
+            <label for="description"><b>Tell us a little bit more about the item you want to sell, type a brief description about it here: </b><br></br></label>
+            <input type="text" placeholder="enter description" id="description" name="description" size="60">
+            <br><br>
+            <label for="condit"><b>What is the condition of the item like? Please enter poor, fair, good, or new below: </b></label>
+            <br><br>
+            <input type="text" placeholder="poor, fair, good, or new" id="condit" name="condit" size="30">
+           <br><br>
+	   <label for="payment">What forms of payment will you accept? </label>
+	   <br><br>
+	   <select name="payment" id="payment" multiple>
+		   <option value="venmo">Venmo</option>
+		   <option value="cash">Cash</option>
+		   <option value="cash app">Cash App</option>
+		   <option value="paypal">Paypal</option>
+		   
+	   </select>
+	   <br><br>
+            <button onclick="ScheduleFunction()">Submit</button>
+
+        </form>
+        <script>
+            function ScheduleFunction() {
+                location.replace("RiderSchedule.html")
+            }
+
+        </script>
+<footer>
+    <p> Rebel Marketplace &#169; 2021</p>
+  </footer>
+
+
+    </body>
+
+</html>
+
